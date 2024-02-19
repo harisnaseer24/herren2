@@ -157,12 +157,16 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .btn-back-to-top {
   display: none;
   position: fixed;
-  width: 40px;
-  height: 38px;
-  bottom: 0px;
-  right: 40px;
-  background-color: #717fe0;
-  opacity: 0.5;
+  width: 52px;
+  height: 50px;
+  bottom: 60px;
+  right: 30px;
+/* background-color: #000;
+ */
+ background-image: url("../images/icons/whatsapp.png");
+ background-size: cover;
+ background-position: center center;
+  opacity: 0.7;
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -181,13 +185,13 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 .btn-back-to-top:hover {
   opacity: 1;
-  background-color: #717fe0;
+ 
 }
 
 @media (max-width: 575px) {
   .btn-back-to-top {
-    bottom: 0px;
-    right: 15px;
+    bottom: 30px;
+    right: 20px;
   }
 }
 
