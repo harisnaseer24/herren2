@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title><?= getPageTitle()?></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -35,3 +35,16 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
+
+
+<?php
+function getPageTitle() {
+    // Get the current page name from the URL
+    $currentPage = basename($_SERVER['PHP_SELF'], '.php');
+
+    // Capitalize the first letter and replace underscores with spaces
+    $formattedTitle = ucwords(str_replace('_', ' ', $currentPage));
+
+    return $formattedTitle;
+}
+?>
