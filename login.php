@@ -89,10 +89,6 @@ include('./layout/cart.php');
 						<button type="submit" name="register" class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
 							Register
 						</button>
-						<div class="my-3 m-b-20 how-pos4-parent">
-							<p class="stext-111 cl2 plh3 size-116 fw-spacing-2 p-r-30">Already a herren user..?<a class="text-dark fw-bold" href="login.php">Login now..!</a></p>
-						</div>
-						
 					</form>
 				</div>
 
